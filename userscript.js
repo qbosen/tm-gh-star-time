@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         GitHub Repo Star Time
-// @namespace    http://github.com/qbosen/tm-gh-star-time
+// @namespace    https://github.com/qbosen/tm-gh-star-time
 // @version      0.2
 // @description  Display the time stared at for GitHub repositories on the repository page.
 // @author       qbosen
@@ -163,7 +163,7 @@
             const detailsElement = document.querySelector('.BorderGrid .BorderGrid-cell');
             if (detailsElement) {
                 const timeElement = document.createElement('div');
-                timeElement.textContent = `Stared at ${timeString}`;
+                timeElement.textContent = `Starred at ${timeString}`;
                 detailsElement.appendChild(timeElement);
             } else {
                 console.log(`star time: ${timeString}`);
